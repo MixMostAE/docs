@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Check Endpoint</title>
+</head>
+<body>
+  <h1>Update Check Endpoint</h1>
+
+  <script>
+    // Define the update JSON data
+    var updateInfo = {
+      "version": "1.0.0",
+      "downloadUrl": "https://yourgithubusername.github.io/yourrepository/update.zip" // Update with your actual download URL
+    };
+
+    // Serve the update JSON data in response to the client's request
+    var jsonData = JSON.stringify(updateInfo);
+    document.write(jsonData);
+  </script>
+</body>
+</html>
